@@ -1,0 +1,16 @@
+
+        https://blog.csdn.net/weixin_64960879/article/details/134512501
+  
+
+程序：
+from machine import Pin
+import time
+ 
+# 设置GPIO引脚：LED连接在GPIO2，所以这里选择2号引脚
+led = Pin(22, Pin.OUT)
+ 
+while True:
+    led.value(1)  # 开启LED
+    time.sleep(1)  # 等待1秒
+    led.value(0)  # 关闭LED
+    time.sleep(1)  # 等待1秒

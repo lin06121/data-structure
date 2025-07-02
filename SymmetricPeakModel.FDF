@@ -1,0 +1,24 @@
+[General Info]
+Name=SymmetricPeakModel
+Type=User
+Description=A model of y = 1 / sqrt(1 + Q^2 * (x - 1/x)^2)
+FunctionType=Expression
+Args=x
+NumParams=1
+ParamNames=Q
+ParamInitVals=1
+ParamLowerBounds=0.01
+ParamUpperBounds=10
+IndependentVar=x
+DependentVar=y
+
+[Function]
+y = 1 / sqrt(1 + Q^2 * (x - 1/x)^2);
+
+[Constraints]
+Q > 0
+
+[Control]
+UseDataRange=1
+UseError=0
+UseWeight=0
