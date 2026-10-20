@@ -1,0 +1,14 @@
+# C/C++ build artifacts
+*.exe
+*.out
+*.o
+*.obj
+*.gch
+
+# Build directories
+build/
+cmake-build-*/
+
+# IDE directories
+.idea/
+.vscode/
